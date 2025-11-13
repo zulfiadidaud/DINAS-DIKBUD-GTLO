@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perencanaan - Media Informasi DikBud</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen">
+
+<header class="bg-gradient-to-r from-blue-900 to-black text-white sticky top-0 z-50 shadow-lg">
+    
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            <div class="flex items-center space-x-4">
+                <img class="h-12 w-auto" src="image/logo kemendikbud.png" alt="Logo Kemendikbud">
+                <img class="h-12 w-auto" src="image/logo2.svg" alt="Logo Dinas"> 
+                <div class="flex flex-col text-left">
+                    <span class="font-bold text-base uppercase leading-tight">DINAS</span>
+                    <span class="font-bold text-base uppercase leading-tight">PENDIDIKAN DAN KEBUDAYAAN</span>
+                    <span class="font-bold text-base uppercase leading-tight">PROVINSI GORONTALO</span>
+                </div>
+            </div>
+            <div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="border-t border-white/20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center h-14">
+                
+                <div class="hidden md:flex flex-1 justify-center items-center space-x-8">
+                    
+                    <a href="index.html" class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium text-gray-300 hover:border-gray-200 hover:text-white">Beranda</a>
+                    
+                    <div class="relative">
+                        <button type="button" data-dropdown-toggle="kepegawaian-menu" class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium text-gray-300 hover:border-gray-200 hover:text-white" aria-expanded="false">
+                            <span>Kepegawaian</span>
+                            <svg class="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </button>
+                        <div id="kepegawaian-menu" data-dropdown-menu class="hidden absolute z-10 top-full left-1/2 -translate-x-1/2 mt-3 w-64 rounded-lg shadow-xl bg-black/80 backdrop-blur-md border border-white/20 overflow-hidden">
+                            <a href="kepegawaian.html" class="block px-5 py-3 text-sm font-semibold text-white hover:bg-white/10 border-b border-white/10">Halaman Utama Kepegawaian</a>
+                            <a href="pengajuan-kenaikan-pangkat.html" class="block px-5 py-3 text-sm text-gray-300 hover:bg-white/10">Pengajuan Kenaikan Pangkat</a>
+                            <a href="pengajuan-cuti.html" class="block px-5 py-3 text-sm text-gray-300 hover:bg-white/10">Pengajuan Cuti</a>
+                            <a href="rekomendasi-penelitian.html" class="block px-5 py-3 text-sm text-gray-300 hover:bg-white/10">Rekomendasi Penelitian</a>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <button type="button" data-dropdown-toggle="perencanaan-menu" class="inline-flex items-center px-1 pt-1 border-b-2 border-white text-sm font-semibold text-white" aria-expanded="false">
+                            <span>Perencanaan</span>
+                            <svg class="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </button>
+                        <div id="perencanaan-menu" data-dropdown-menu class="hidden absolute z-10 top-full left-1/2 -translate-x-1/2 mt-3 w-64 rounded-lg shadow-xl bg-black/80 backdrop-blur-md border border-white/20 overflow-hidden">
+                            <a href="perencanaan.html" class="block px-5 py-3 text-sm font-semibold text-white hover:bg-white/10 border-b border-white/10">Halaman Utama Perencanaan</a>
+                            <a href="pengajuan-npsn.html" class="block px-5 py-3 text-sm text-gray-300 hover:bg-white/10">Pengajuan NPSN</a>
+                            <a href="pengajuan-npyp.html" class="block px-5 py-3 text-sm text-gray-300 hover:bg-white/10">Pengajuan NPYP</a>
+                            <a href="pelayanan-dapodik.html" class="block px-5 py-3 text-sm text-gray-300 hover:bg-white/10">Pelayanan Dapodik</a>
+                        </div>
+                    </div>
+                    <a href="kontak.html" class="ml-4 inline-flex items-center bg-white text-blue-900 font-semibold px-4 py-2 rounded-lg shadow-md hover:bg-gray-100 transition-colors text-sm">
+                        Hubungi Kami
+                    </a>
+                </div>
+                
+                <div class="md:hidden flex flex-1 justify-end">
+                    <button id="mobile-menu-button" class="text-white hover:text-gray-200">
+                        <span class="sr-only">Buka menu</span>
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="md:hidden hidden flex-col space-y-1 pb-3 px-4">
+            <a href="index.html" class="block px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/10 rounded-md">Beranda</a>
+            
+            <a href="kepegawaian.html" class="block px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/10 rounded-md">Kepegawaian</a>
+            <div class="pl-5 border-l-2 border-white/20 ml-2 space-y-1">
+                <a href="pengajuan-kenaikan-pangkat.html" class="block px-3 py-2 text-base font-medium text-gray-400 hover:bg-white/10 rounded-md">Pengajuan Kenaikan Pangkat</a>
+                <a href="pengajuan-cuti.html" class="block px-3 py-2 text-base font-medium text-gray-400 hover:bg-white/10 rounded-md">Pengajuan Cuti</a>
+                <a href="rekomendasi-penelitian.html" class="block px-3 py-2 text-base font-medium text-gray-400 hover:bg-white/10 rounded-md">Rekomendasi Penelitian</a>
+            </div>
+
+            <a href="perencanaan.html" class="block px-3 py-2 text-base font-medium text-white bg-white/10 rounded-md">Perencanaan</a>
+            <div class="pl-5 border-l-2 border-white/20 ml-2 space-y-1">
+                <a href="pengajuan-npsn.html" class="block px-3 py-2 text-base font-medium text-gray-400 hover:bg-white/10 rounded-md">Pengajuan NPSN</a>
+                <a href="pengajuan-npyp.html" class="block px-3 py-2 text-base font-medium text-gray-400 hover:bg-white/10 rounded-md">Pengajuan NPYP</a>
+                <a href="pelayanan-dapodik.html" class="block px-3 py-2 text-base font-medium text-gray-400 hover:bg-white/10 rounded-md">Pelayanan Dapodik</a>
+            </div>            
+            <a href="kontak.html" class="block w-full text-center mt-2 px-3 py-2 text-base font-semibold text-blue-900 bg-white hover:bg-gray-100 rounded-lg shadow-md">
+                Hubungi Kami
+            </a>
+        </div>
+    </nav>
+</header>
+<main class="py-16 sm:py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <a href="index.html" class="inline-flex items-center text-blue-700 hover:text-blue-900 text-lg font-medium px-4 py-2 rounded-md transition-colors duration-200">
+    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg> Kembali ke Beranda</a>
+            
+            <div class="glass-container flex items-center space-x-4 mb-8 p-6">
+                <div class="flex-shrink-0 bg-blue-100 p-3 rounded-full">
+                    <svg class="w-10 h-10 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900">Bidang Perencanaan</h2>
+                    <p class="text-gray-700 mt-1 text-lg">Perumusan program, anggaran, dan data pendidikan.</p>
+                </div>
+            </div>
+
+        <div class="glass-container p-6 md:p-8">
+            <h4 class="text-2xl font-bold text-gray-800 mb-6">Layanan Unggulan:</h4>
+            
+            <div class="space-y-4">
+
+                <a href="pengajuan-npsn.html" 
+                   class="glass-button p-5 flex items-center space-x-4">
+                    <div class="flex-shrink-0 bg-blue-100 p-3 rounded-full">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                    </div>
+                    <div>
+                        <span class="text-lg text-gray-900 font-semibold">Pengajuan NPSN</span>
+                        <p class="text-gray-700 text-sm">Daftarkan sekolah baru untuk mendapatkan NPSN.</p>
+                    </div>
+                </a>
+
+                <a href="pengajuan-npyp.html" 
+                   class="glass-button p-5 flex items-center space-x-4">
+                    <div class="flex-shrink-0 bg-blue-100 p-3 rounded-full">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                    </div>
+                    <div>
+                        <span class="text-lg text-gray-900 font-semibold">Pengajuan NPYP</span>
+                        <p class="text-gray-700 text-sm">Layanan pengajuan NPYP (Nomor Pokok Yayasan Pendidikan).</p>
+                    </div>
+                </a>
+
+                <a href="pelayanan-dapodik.html" 
+                   class="glass-button p-5 flex items-center space-x-4">
+                    <div class="flex-shrink-0 bg-blue-100 p-3 rounded-full">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18m-9-4v8"></path></svg>
+                    </div>
+                    <div>
+                        <span class="text-lg text-gray-900 font-semibold">Pelayanan Dapodik</span>
+                        <p class="text-gray-700 text-sm">Konsultasi dan bantuan terkait Data Pokok Pendidikan.</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </main>
+    
+    <footer class="bg-gray-900/60 text-gray-200 backdrop-blur-lg border-t border-white/30 mt-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 text-center">
+            <p>&copy; 2025 Media Informasi DikBud. Hak Cipta Dilindungi.</p>
+            <p class="text-sm text-gray-300 mt-1">Dinas Pendidikan dan Kebudayaan Gorontalo</p>
+        </div>
+    </footer>
+    
+<script src="script.js"></script>
+</body>
+</html>

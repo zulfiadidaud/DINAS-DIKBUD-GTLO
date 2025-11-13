@@ -1,0 +1,105 @@
+/* =================================
+   RESEP 1: TAMPILAN DASAR WEBSITE
+   ================================= */
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* Background gradien lembut Anda, ini sempurna untuk glassmorphism */
+    background-image: linear-gradient(120deg, #f0f9ff 0%, #e0f2fe 25%, #f0e6ff 50%, #fef9c3 75%, #fff1f2 100%);
+}
+
+/* =================================
+   RESEP 2: VIDEO BACKGROUND
+   ================================= */
+.video-bg-cover {
+    object-fit: cover;
+}
+
+
+/* ========================================================
+   RESEP 3: KARTU KACA UTAMA (.glass-container)
+   ========================================================
+   TUTOR: Ini adalah versi yang disempurnakan.
+   - Blur lebih kuat (24px)
+   - Transparansi lebih halus (0.3)
+   - Bayangan lebih lembut
+*/
+.glass-container {
+    background-color: rgba(255, 255, 255, 0.3);  /* Sedikit lebih transparan */
+    backdrop-filter: blur(24px);                 /* Blur lebih kuat (ala iOS) */
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.2);  /* Border lebih halus */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);  /* Bayangan lebih lembut */
+    border-radius: 1rem;                         /* rounded-2xl */
+}
+
+/* ========================================================
+   RESEP 4: TOMBOL KACA (.glass-button)
+   ========================================================
+   TUTOR: Ini juga disempurnakan agar serasi.
+*/
+.glass-button {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.4);  /* Sedikit lebih transparan */
+    backdrop-filter: blur(12px);                 /* Blur sedang (cukup) */
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);  /* Border lebih halus */
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05); /* Bayangan sangat halus */
+    border-radius: 0.75rem;                      /* rounded-xl */
+    transition: all 0.2s ease-in-out;
+}
+
+.glass-button:hover {
+    background-color: rgba(255, 255, 255, 0.6);  /* Efek hover lebih halus */
+    box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.1);  /* Bayangan hover lebih jelas */
+    transform: scale(1.02);                      /* Tetap perbesar sedikit */
+}
+
+
+/* ========================================================
+   RESEP 5: FOOTER KACA GELAP (.glass-footer)
+   ========================================================
+   TUTOR: Ini adalah resep BARU untuk merapikan footer Anda.
+   Resep ini meniru: 'bg-gray-900/60 backdrop-blur-lg border-t border-white/30'
+*/
+.glass-footer {
+    background-color: rgba(17, 24, 39, 0.6);   /* bg-gray-900/60 */
+    backdrop-filter: blur(16px);                 /* backdrop-blur-lg */
+    -webkit-backdrop-filter: blur(16px);
+    border-top: 1px solid rgba(255, 255, 255, 0.3); /* border-t border-white/30 */
+}
+/* ========================================================
+   RESEP 6: TANDA AIR (WATERMARK) "PERCOBAAN"
+   ========================================================
+   TUTOR: Ini adalah kode baru untuk tanda air Anda.
+   Kode ini akan otomatis muncul di SETIAP halaman.
+*/
+body::after {
+    /* 1. Teks Tanda Air */
+    content: 'PENINJAUAN';
+    
+    /* 2. Ukuran & Tampilan */
+    font-size: 10vw;      /* Ukuran besar (10% dari lebar layar) */
+    font-weight: 800;     /* Extra-bold (font-black) */
+    
+    /* 3. Warna & Transparansi */
+    /* Ini adalah hitam dengan transparansi 8% (sangat pudar) */
+    color: rgba(0, 0, 0, 0.1); 
+    
+    /* 4. Posisi (Tetap di Tengah Layar) */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 9999;        /* Tampil di atas segalanya */
+
+    /* 5. Miring & Penyesuaian Posisi */
+    /* Ini adalah formula untuk: 
+       - Pindah ke tengah (-50%, -50%) 
+       - Miring -30 derajat (bawah-kiri ke atas-kanan)
+    */
+    transform: translate(-50%, -50%) rotate(-30deg);
+
+    /* 6. PENTING: Agar Tanda Air TIDAK BISA DIKLIK */
+    /* Ini membuat semua klik "tembus" ke tombol di bawahnya */
+    pointer-events: none;
+    user-select: none;
+}
